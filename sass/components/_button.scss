@@ -1,0 +1,26 @@
+[type="button"],
+[type="submit"] {
+  letter-spacing: 0.06em;
+  &:active {
+    box-shadow: inset 1px 1px 10px #333333;
+  }
+}
+
+.hero__button {
+  background-color: $brandColor;
+  border: none;
+  border-radius: 4px;
+
+  color: $fontClr300;
+  font-family: inherit;
+  font-weight: $fwBold;
+  font-size: $fsButton;
+  line-height: 1.88;
+
+  padding: 10px 41px;
+  @include transition(filter);
+  &:hover {
+    filter: drop-shadow(0px 0px 2px $brandColor);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  }
+}

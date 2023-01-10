@@ -1,0 +1,107 @@
+::selection {
+  background-color: $brandColor;
+  color: $fontClr300;
+}
+
+::-webkit-scrollbar {
+  width: 0.75em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  margin-block: -0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100vh;
+  background-color: $accentClr300;
+}
+
+*:focus {
+  outline: none;
+
+  transform: scale(1.02);
+  transition: transform 250ms;
+
+  /* box-shadow: 0 0 5px var(--brand-clr);
+  border-radius: 4px; */
+
+  /* filter: drop-shadow(0 0 0.25em var(--brand-clr)); */
+}
+
+body {
+  color: $fontClr100;
+  font-family: $ffPrimary;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 80px 0 0 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+.section {
+  background-color: $bgClr200;
+  padding: 94px 0;
+}
+
+.section-portfolio {
+  padding: 94px;
+}
+
+.section:first-of-type {
+  padding-bottom: 0;
+}
+
+/*deleting base formatting, margins, paddings in links and lists elements*/
+
+* {
+  margin: 0;
+  padding: 0;
+  margin-block: 0 0;
+  //   overflow-x: hidden;
+}
+
+.link {
+  color: inherit;
+  font-style: inherit;
+  text-decoration: none;
+
+  @include transition(color);
+}
+
+.list {
+  list-style-type: none;
+}
+
+/* global hover effects */
+
+[type="button"]:hover,
+[type="submit"]:hover,
+.portfolio-projects:hover,
+.socials-icon:hover,
+.clients-icon:hover {
+  cursor: pointer;
+}
+
+.join-us .socials__icon:hover {
+  cursor: url(../images/custom-pointer.svg), auto;
+}
+
+/* icons styling */
+
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+}

@@ -1,0 +1,30 @@
+.advantages {
+  &__heading {
+    @include itemHeading($fontClr300);
+  }
+
+  &__text {
+    color: $fontClr200;
+    font-size: $fsItemText;
+    line-height: 1.71;
+  }
+
+  &__icon {
+    background-color: $bgClr200;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+    padding: 25px 100px;
+  }
+
+  &__list {
+    display: flex;
+
+    gap: 30px;
+    justify-content: center;
+  }
+}

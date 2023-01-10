@@ -1,0 +1,52 @@
+.footer {
+  background-color: $bgClr400;
+  color: $fontClr300;
+  padding: 60px;
+  .contact {
+    display: inline-block;
+    color: $fontClr200;
+    margin-top: 9px;
+  }
+  &__logo {
+    margin-bottom: 20px;
+  }
+  &__address {
+    font-style: normal;
+    font-size: $fsFooterAddress;
+    line-height: 1.71;
+  }
+  &__flex {
+    display: flex;
+  }
+  &__logo {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__socials {
+  background-color: $bgClr500;
+  gap: 10px;
+
+  @include transition(background-color);
+  .icon {
+    fill: $iconClr200;
+  }
+}
+
+.join-us {
+  margin-top: 12px;
+  margin-left: 70px;
+  .socials {
+    gap: 10px;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+    @include itemHeading($fontClr300);
+  }
+}
+
+.footer__logo--accent {
+  color: $fontClr300;
+  margin-bottom: 20px;
+}

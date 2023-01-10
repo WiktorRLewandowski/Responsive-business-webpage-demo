@@ -1,0 +1,17 @@
+/* logo styling */
+
+.logo {
+  display: inline-block;
+  user-select: none;
+
+   $ffLogo: "Raleway", sans-serif;
+  color: $brandColor;
+  font-family: $ffLogo;
+  font-weight: 700;
+  font-size: 1.625rem;
+  line-height: 1.1923;
+  margin: 0;
+}
+
+
+

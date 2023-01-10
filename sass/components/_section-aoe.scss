@@ -1,0 +1,32 @@
+.aoe {
+  &__heading {
+    @include sectionHeading();
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 30px;
+    justify-content: center;
+  }
+
+  &__item {
+    position: relative;
+    // overflow: hidden;
+  }
+
+  &__label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    text-align: center;
+    padding: 27px 0;
+
+    background-color: $accentClr100;
+    color: $fontClr300;
+
+    @include itemHeading($fontClr300);
+  }
+}

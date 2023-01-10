@@ -1,0 +1,28 @@
+.hero__heading {
+  font-size: $fsPageHeading;
+  font-weight: $fwSuperBold;
+  color: $fontClr300;
+  line-height: 1.36;
+}
+
+@mixin sectionHeading() {
+  font-weight: $fwBold;
+  font-size: $fsSectionHeading;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@mixin itemHeading($color) {
+  font-size: $fsItemHeading;
+  font-weight: $fwBold;
+  line-height: 1.1428;
+  text-transform: uppercase;
+
+  color: $color;
+}
+
+@mixin transition($property) {
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+

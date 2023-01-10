@@ -1,0 +1,112 @@
+/* portfolio */
+
+.portfolio {
+  background-color: $fontClr300;
+  &__caption {
+    border-bottom: 1px solid $accentClr200;
+    border-left: 1px solid $accentClr200;
+    border-right: 1px solid $accentClr200;
+    padding: 20px 24px;
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: $fsPortfolioProjects;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &__description {
+    color: $fontClr200;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+  }
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.portfolio__projects {
+  @include transition(box-shadow);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    .portfolio__overlay {
+      transform: translateY(0);
+    }
+  }
+}
+
+.portfolio__overlay {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+
+  padding-inline: 24px 45px;
+
+  width: 100%;
+  height: 100%;
+
+  inset: 0;
+
+  /* top: 0;
+  left: 0;
+  padding: 49px 45px 49px 24px; */
+  /* margin: auto; */
+
+  color: $fontClr300;
+  background-color: $accentClr300;
+
+  font-size: 18px;
+  line-height: 1.55;
+  text-align: left;
+
+  transform: translateY(101%);
+  @include transition(transform);
+  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__button {
+  background-color: $bgClr300;
+  border: none;
+  border-radius: 4px;
+  color: $fontClr100;
+
+  font-family: inherit;
+  font-weight: $fwSemiBold;
+  font-size: $fsPrimary;
+
+  padding: 6px 22px;
+  margin: 0.25rem;
+  line-height: 1.62;
+
+  transition: background, color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $brandColor;
+    color: $fontClr300;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

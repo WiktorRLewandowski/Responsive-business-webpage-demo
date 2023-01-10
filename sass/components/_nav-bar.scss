@@ -1,0 +1,116 @@
+/* navigation bar */
+.link:hover,
+.link:focus,
+.link[href="#"] {
+  color: $brandColor;
+  fill: currentColor;
+}
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+
+  background-color: $bgClr200;
+  border: 1px solid #ececec;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
+
+  padding: 25px;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  &__navigation {
+    margin-left: 93px;
+    user-select: none;
+  }
+  &__pages {
+    display: flex;
+    gap: 46px;
+  }
+
+  &__contact-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    color: $fontClr200;
+    margin-left: auto;
+  }
+
+  &__contact {
+    display: block;
+  }
+
+  &__contact .link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 10px;
+
+    fill: currentColor;
+  }
+}
+
+.nav-bar__item {
+  position: relative;
+  padding-bottom: 2.4em;
+
+  transform: translateY(-100%);
+  // @include transition(color, transform);
+  // transition: color, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &::after {
+    position: absolute;
+
+    // top: 3.5em;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+    width: 100%;
+
+    content: "";
+    border: 2px solid $brandColor;
+    border-radius: 2px;
+    background-color: $brandColor;
+    opacity: 0;
+
+    transform: translateY(-2.4em);
+    @include transition(transform);
+  }
+}
+
+.link[href="#"]::after,
+.nav-bar__item:hover::after,
+.nav-bar__item:focus::after {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  content: "";
+  border: 2px solid $brandColor;
+  border-radius: 2px;
+  background-color: $brandColor;
+
+  // @include transition(transform);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.nav-bar__logo--accent {
+  color: $fontClr500;
+}

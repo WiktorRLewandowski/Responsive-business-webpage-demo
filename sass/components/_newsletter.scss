@@ -1,0 +1,66 @@
+/* newsletter styling */
+
+.newsletter {
+  margin: 12px 0 0 78px;
+  width: 100%;
+
+  &__label-header {
+    display: block;
+    margin-bottom: 20px;
+    @include itemHeading($fontClr300);
+  }
+
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  &__input {
+    background-color: $bgClr400;
+    color: $fontClr400;
+    flex-grow: 2;
+
+    // margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 15px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+}
+
+.newsletter__input:autofill,
+.newsletter__input:-webkit-autofill,
+.newsletter__input:-internal-autofill-selected {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+.newsletter__button {
+  display: flex;
+
+  align-items: center;
+
+  color: $fontClr300;
+
+  background: $brandColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  border: none;
+  border-radius: 4px;
+
+  padding: 10px 24px 10px 42px;
+  @include transition(filter);
+  &:hover {
+    filter: drop-shadow(0px 0px 2px $brandColor);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  }
+}
+
+.newsletter__icon {
+  margin-left: 24px;
+}
