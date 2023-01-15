@@ -52,17 +52,25 @@ img {
 
 .section {
   background-color: $bgClr200;
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .section-portfolio {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .section:first-of-type {
   padding-bottom: 0;
 }
 
+@media (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+  .section-portfolio {
+    padding: 94px 0;
+  }
+}
 /*deleting base formatting, margins, paddings in links and lists elements*/
 
 * {

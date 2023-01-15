@@ -2,6 +2,7 @@
   &__heading {
     @include itemHeading($fontClr100);
     margin-bottom: 10px;
+    text-align: center;
   }
 
   &__text {
@@ -40,6 +41,9 @@
     }
     &__icon {
       padding-block: 25px;
+    }
+    &__heading {
+      text-align: start;
     }
   }
 }
