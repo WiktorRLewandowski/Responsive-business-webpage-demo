@@ -11,15 +11,27 @@
   flex-direction: column;
 
   max-width: 1600px;
-  padding: 200px 0;
+  padding: 118px 0;
   margin-inline: auto;
   &__heading {
     margin-bottom: 30px;
-    max-width: 696px;
+    max-width: 365px;
 
     text-align: center;
     text-transform: uppercase;
 
     letter-spacing: 0.06em;
+
+    @include heroHeading($fsPageHeadingMobile, 1.6153);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    padding: 200px;
+    &__heading {
+      @include heroHeading($fsPageHeading, 1.36);
+      max-width: 696px;
+    }
   }
 }

@@ -1,28 +1,54 @@
 .clients {
   &__heading {
-    @include sectionHeading();
+    @include sectionHeading($fsSectionHeadingMobile);
   }
 
   &__container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
   }
   &__icon {
     fill: $iconClr100;
     stroke: $iconClr200;
-
+  }
+  &__item {
     border: 1px solid $iconClr100;
     border-radius: 4px;
-    margin-inline: 15px;
 
-    padding: 16px 32px;
-
+    padding-block: 16px;
+    padding-inline: 52px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
-    &:focus {
+    &:focus,
+    &:hover .clients__icon,
+    &:focus .clients__icon {
       border-color: $brandColor;
       fill: $brandColor;
       cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .clients__item {
+    padding-inline: 60px;
+  }
+}
+// @media (min-width: 768px) {
+//   .clients__item {
+//     padding: 16px 32px;
+//   }
+// }
+
+@media (min-width: 1200px) {
+  .clients {
+    &__heading {
+      @include sectionHeading($fsSectionHeading);
+    }
+    &__item {
+      padding-inline: 30px;
     }
   }
 }

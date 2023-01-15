@@ -4,14 +4,19 @@
   display: inline-block;
   user-select: none;
 
-   $ffLogo: "Raleway", sans-serif;
+  $ffLogo: "Raleway", sans-serif;
   color: $brandColor;
   font-family: $ffLogo;
   font-weight: 700;
-  font-size: 1.625rem;
-  line-height: 1.1923;
+  font-size: $fsLogoMobile;
+  line-height: 1.1741;
+
   margin: 0;
 }
 
-
-
+@media (min-width: 1200px) {
+  .logo {
+    font-size: $fsLogo;
+    line-height: 1.1923;
+  }
+}

@@ -1,14 +1,23 @@
-.hero__heading {
-  font-size: $fsPageHeading;
+@mixin heroHeading($fs, $lineHeight) {
+  // font-size: $fsPageHeading;
+  font-size: $fs;
   font-weight: $fwSuperBold;
   color: $fontClr300;
-  line-height: 1.36;
+  // line-height: 1.36;
+  line-height: $lineHeight;
 }
 
-@mixin sectionHeading() {
+@mixin navigationFont() {
+  font-weight: $fwSemiBold;
+  font-size: $fsNavBar;
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
+}
+
+@mixin sectionHeading($fs) {
   font-weight: $fwBold;
-  font-size: $fsSectionHeading;
-  line-height: 1.16;
+  font-size: $fs;
+  line-height: 1.171;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -25,4 +34,3 @@
 @mixin transition($property) {
   transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-

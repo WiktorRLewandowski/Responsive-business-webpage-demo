@@ -1,11 +1,12 @@
 .staff {
   background-color: $bgClr300;
   &__heading {
-    @include sectionHeading();
+    @include sectionHeading($fsSectionHeadingMobile);
   }
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
 
     gap: 30px;
     justify-content: center;
@@ -20,6 +21,8 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    flex-basis: 25%;
   }
 
   &__name {
@@ -34,5 +37,10 @@
 
   &__caption {
     padding: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .staff__heading {
+    @include sectionHeading($fsSectionHeading);
   }
 }

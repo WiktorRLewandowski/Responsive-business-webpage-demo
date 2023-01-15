@@ -1,6 +1,7 @@
 .advantages {
   &__heading {
-    @include itemHeading($fontClr300);
+    @include itemHeading($fontClr100);
+    margin-bottom: 10px;
   }
 
   &__text {
@@ -18,13 +19,37 @@
     justify-content: center;
 
     margin-bottom: 30px;
-    padding: 25px 100px;
+    padding-block: 25px;
   }
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
 
     gap: 30px;
     justify-content: center;
+  }
+  &__item {
+    flex-basis: 100%;
+  }
+}
+@media (min-width: 480px) {
+  .advantages {
+    &__item {
+      flex-basis: 40%;
+    }
+    &__icon {
+      padding-block: 25px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .advantages {
+    &__item {
+      flex-basis: 20%;
+    }
+    &__icon {
+      padding-block: 25px;
+    }
   }
 }

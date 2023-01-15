@@ -1,49 +1,56 @@
-  $brandColor: #2196f3;
+$brandColor: #2196f3;
 
-  $fontClr100: #212121;
-  $fontClr200: #757575;
-  $fontClr300: #ffffff;
-  $fontClr400: #ffffff99;
-  $fontClr500: #000000;
+$fontClr100: #212121;
+$fontClr200: #757575;
+$fontClr300: #ffffff;
+$fontClr400: #ffffff99;
+$fontClr500: #000000;
 
-  $bgClr100: #e5e5e5;
-  $bgClr200: #ffffff;
-  $bgClr300: #f5f4fa;
-  $bgClr400: #2f303a;
-  $bgClr500: #ffffff1a;
+$bgClr100: #e5e5e5;
+$bgClr200: #ffffff;
+$bgClr300: #f5f4fa;
+$bgClr400: #2f303a;
+$bgClr500: #ffffff1a;
 
-  $accentClr100: #2f303acc;
-  $accentClr200: #eeeeee;
-  $accentClr300: #2196f3e5;
+$accentClr100: #2f303acc;
+$accentClr200: #eeeeee;
+$accentClr300: #2196f3e5;
 
-  $iconClr100: #afb1b8;
-  $iconClr200: #ffffff;
+$iconClr100: #afb1b8;
+$iconClr200: #ffffff;
 
-  $ffPrimary: "Roboto", sans-serif;
-  $ffLogo: "Raleway", sans-serif;
+$ffPrimary: "Roboto", sans-serif;
+$ffLogo: "Raleway", sans-serif;
 
-  $fsPrimary: 1rem;
-  $fsButton: 1rem;
+$fsPrimary: 1rem;
+$fsButton: 1rem;
 
-  $fsLogo: 1.625rem;
+$fsLogo: 1.625rem;
+$fsLogoMobile: 1.5rem;
+// line height 1.741
 
-  $fsPageHeading: 2.75rem;
-  $fsSectionHeading: 2.25rem;
+$fsPageHeading: 2.75rem;
+$fsPageHeadingMobile: 1.625rem;
+// line height 1.6153
+$fsSectionHeading: 2.25rem;
+$fsSectionHeadingMobile: 1.75rem;
+// line height 1.171
 
-  $fsModalHeading: 1.25rem;
+$fsModalHeading: 1.25rem;
 
-  $fsModalItems: 0.75rem; 
+$fsModalItems: 0.75rem;
+$fsNavBarContacts: 0.75rem;
 
-  $fsModalCheckbox-label: 0.875rem;
-  $fsItemHeading: 0.875rem;
-  $fsItemText: 0.875rem;
-  $fsNavBar: 0.875rem;
-  $fsFooterAddress: 0.875rem;
+$fsModalCheckbox-label: 0.875rem;
+$fsItemHeading: 0.875rem;
+$fsItemText: 0.875rem;
+$fsNavBar: 0.875rem;
+$fsFooterAddress: 0.875rem;
 
-  $fsPortfolioProjects: 1.125rem;
-  $fsPortfolioOverlay: 1.125rem;
+$fsPortfolioProjects: 1.125rem;
+$fsPortfolioOverlay: 1.125rem;
 
-  $fwRegular: 400;
-  $fwSemiBold: 500;
-  $fwBold: 700;
-  $fwSuperBold: 900;
+$fwRegular: 400;
+$fwSemiBold: 500;
+$fwBold: 700;
+$fwSuperBold: 900;
