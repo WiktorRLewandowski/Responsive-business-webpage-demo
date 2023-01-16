@@ -1,8 +1,11 @@
 .footer {
-  display: none;
+  // display: none;
   background-color: $bgClr400;
   color: $fontClr300;
-  padding: 60px;
+  // padding: 60px;
+  padding-block: 60px;
+
+  text-align: center;
   .contact {
     display: inline-block;
     color: $fontClr200;
@@ -18,7 +21,10 @@
   }
   &__flex {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     // flex-wrap: wrap;
+    gap: 60px;
   }
   &__logo {
     margin-bottom: 20px;
@@ -28,6 +34,7 @@
 .footer__socials {
   background-color: $bgClr500;
   gap: 10px;
+  // align-self: center;
 
   @include transition(background-color);
   .icon {
@@ -36,8 +43,8 @@
 }
 
 .join-us {
-  margin-top: 12px;
-  margin-left: 70px;
+  // margin-top: 12px;
+  // margin-left: 70px;
   .socials {
     gap: 10px;
   }
