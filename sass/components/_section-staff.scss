@@ -1,5 +1,5 @@
 .staff {
-  background-color: $bgClr300;
+  background-color: $bgClr200;
   &__heading {
     @include sectionHeading($fsSectionHeadingMobile);
   }
@@ -41,6 +41,11 @@
 
   &__caption {
     padding: 30px;
+  }
+}
+@media (min-width: 786px) {
+  .staff {
+    background-color: $bgClr300;
   }
 }
 @media (min-width: 1200px) {
