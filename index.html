@@ -22,7 +22,7 @@
   <!-- modal -->
 
   <div class="is-hidden" data-modal>
-    <div class="modal" data-modal-close>
+    <div class="modal">
       <div class="modal__window">
         <button class="modal__btn-close" type="button" data-modal-close><svg class="icon" width="18px" height="18px">
             <use href="./images/icons.svg#icon-close-black"></use>
@@ -206,7 +206,7 @@
         <div class="staff">
           <h2 class="staff__heading">Nasz zespół</h2>
           <ul class="staff__list list">
-            <li>
+            <li class="staff__item">
               <figure class="staff__figure">
                 <img src="images/john-doe1.jpg" alt="Photo of John Doe the First" width="270" height="260" />
                 <figcaption class="staff__caption">
@@ -241,7 +241,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="staff__item">
               <figure class="staff__figure">
                 <img src="images/jane-doe.jpg" alt="Photo of Jane Doe" width="270" height="260" />
                 <figcaption class="staff__caption">
@@ -275,7 +275,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="staff__item">
               <figure class="staff__figure">
                 <img src="images/john-doe2.jpg" alt="Photo of John Doe the Second" width="270" height="260" />
                 <figcaption class="staff__caption">
@@ -309,7 +309,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="staff__item">
               <figure class="staff__figure">
                 <img src="images/john-doe3.jpg" alt="Photo of John Doe the Third" width="270" height="260" />
                 <figcaption class="staff__caption">
@@ -397,10 +397,8 @@
 
   <footer class="footer">
     <div class="container footer__flex">
-      <div>
-        <a href="./index.html">
-          <p class="logo footer__logo">Web<span class="footer__logo--accent">Studio</span></p>
-        </a>
+      <div class="footer__item">
+        <p class="logo footer__logo">Web<span class="footer__logo--accent">Studio</span></p>
         <address class="footer__address">
           m.&nbsp;Warszawa,&nbsp;Aleje&nbsp;Jerozolimskie&nbsp;21<br />
           <a class="link contact" href="mailto:info@example.com">info@example.com</a><br />
@@ -408,8 +406,9 @@
         </address>
       </div>
 
-      <div class="join-us">
-        <h3 class="join-us__heading">dołącz do nas</h3>
+      <div class="join-us footer__item">
+
+        <h3 class=" join-us__heading">dołącz do nas</h3>
 
         <ul class="list socials">
 
@@ -443,7 +442,7 @@
         </ul>
       </div>
 
-      <div class="newsletter">
+      <div class="newsletter footer__item">
         <form action="">
           <label for="newsletter" class="newsletter__label">
             <span class="newsletter__label-header">zapisz się do newslettera</span>

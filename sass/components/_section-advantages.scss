@@ -37,10 +37,7 @@
 @media (min-width: 480px) {
   .advantages {
     &__item {
-      flex-basis: 40%;
-    }
-    &__icon {
-      padding-block: 25px;
+      flex-basis: calc((100% - 30px) / 2);
     }
     &__heading {
       text-align: start;
@@ -50,10 +47,7 @@
 @media (min-width: 1200px) {
   .advantages {
     &__item {
-      flex-basis: 20%;
-    }
-    &__icon {
-      padding-block: 25px;
+      flex-basis: calc((100% - 3 * 30px) / 4);
     }
   }
 }

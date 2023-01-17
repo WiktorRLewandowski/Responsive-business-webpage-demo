@@ -21,7 +21,7 @@
 
     @include navigationFont();
 
-    padding-block: 1.5em;
+    padding-block: 1.4285em;
     .container {
       display: flex;
       // justify-content: space-between;
@@ -61,6 +61,7 @@
 
     &__icon {
       margin-right: 10px;
+      transform: scale(0.875);
 
       fill: currentColor;
     }
@@ -122,9 +123,10 @@
     color: $fontClr500;
   }
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 934px) {
   .nav-bar {
-    padding-block: 1.75em;
+    padding-block: 1.85em;
     .container {
       gap: 93px;
     }
@@ -138,5 +140,13 @@
       font-size: inherit;
       line-height: inherit;
     }
+    &__icon {
+      transform: scale(1);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .nav-bar {
+    padding-block: 1.75em;
   }
 }
