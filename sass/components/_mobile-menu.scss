@@ -1,6 +1,8 @@
 .mobile-menu {
   position: fixed;
 
+  overflow: auto;
+
   z-index: 2;
 
   background-color: $bgClr200;
@@ -12,22 +14,20 @@
   display: flex;
   align-items: center;
 
-  padding: 10px 15px;
+  padding: 10px 15px 20px;
 
   border-bottom: 1px solid $fontClr200;
-}
-
-.mobile-menu__hamburger {
-  background: transparent;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  border: none;
-  border-radius: 4px;
-}
-
-.hamburger {
-  fill: $fontClr100;
+  &__hamburger {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    border: none;
+    border-radius: 4px;
+  }
+  .hamburger {
+    fill: $fontClr100;
+  }
 }
 
 .line {
@@ -92,6 +92,19 @@
 
 .mobile-menu__logo--accent {
   color: $fontClr500;
+}
+// landscape view of mobile menu on iPhone SE and Samsun S8+
+
+@media screen and (max-height: 375px) {
+  .mobile-menu__container {
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1vmax;
+  }
+  .mobile-menu__contact-flex {
+    margin: 0;
+  }
 }
 
 @media (min-width: 768px) {

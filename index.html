@@ -87,7 +87,8 @@
       <a href="./index.html" class="link">
         <p class="logo mobile-menu__logo">Web<span class="mobile-menu__logo--accent">Studio</span></p>
       </a>
-      <button class="menu-toggle js-open-menu mobile-menu__hamburger" aria-expanded="false" aria-controls="mobile-menu">
+      <button class="menu-toggle js-open-menu js-close-menu mobile-menu__hamburger" aria-expanded="false"
+        aria-controls="mobile-menu">
         <svg class="hamburger" viewBox="0 0 100 100" width="40">
           <rect class="hamburger-top line" width="80" height="10" x="10" y="25" rx="5">
           </rect>
@@ -98,7 +99,7 @@
         </svg>
       </button>
     </div>
-    <div class="mobile-menu__container menu-container js-menu-container">
+    <div class="mobile-menu__container menu-container js-menu-container" id="mobile-menu">
       <ul class="mobile-menu__navigation list">
         <li><a class="mobile-menu__item link" href="#">Agencja</a></li>
         <li><a class="mobile-menu__item link" href="./portfolio.html">Portfolio</a></li>
@@ -155,7 +156,7 @@
 
     <div class="hero">
       <h1 class="hero__heading">efektywne rozwiązania dla waszego biznesu</h1>
-      <button class="hero__button" type="button" data-modal-open>Zamów usługę</button>
+      <button class="hero__button is-open" type="button" data-modal-open>Zamów usługę</button>
 
     </div>
   </header>
@@ -504,6 +505,9 @@
     </div>
 
   </footer>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
   <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
