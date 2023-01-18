@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
 
-  padding: 10px 15px 20px;
+  padding: 10px 15px;
 
   border-bottom: 1px solid $fontClr200;
   &__hamburger {
@@ -54,7 +54,7 @@
   inset: 0;
   height: 100vh;
 
-  padding: 105px 15px 40px;
+  padding: 105px 15px 60px;
 
   font-weight: $fwSemiBold;
 }
@@ -104,6 +104,7 @@
   }
   .mobile-menu__contact-flex {
     margin: 0;
+    align-items: center;
   }
 }
 
