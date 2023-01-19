@@ -1,10 +1,4 @@
 .hero {
-  background-color: $bgClr400;
-  background-image: linear-gradient(#2f303a66, #2f303a66),
-    url(../images/bg-banner.jpg);
-  background-size: cover;
-  background-position: center;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,8 +19,103 @@
     @include heroHeading($fsPageHeadingMobile, 1.6153);
   }
 }
+.hero {
+  background-color: $bgClr400;
+  background-image: linear-gradient(#2f303a66, #2f303a66),
+    url(../images/hero/hero480w.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(#2f303a66, #2f303a66),
+      url(../images/hero/hero480w@2x.jpg);
 
-@media (min-width: 1017px) {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
+  .hero {
+    background-image: linear-gradient(#2f303a66, #2f303a66),
+      url(../images/hero/hero480w@3x.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .hero {
+    background-image: linear-gradient(#2f303a66, #2f303a66),
+      url(../images/hero/hero768w.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(#2f303a66, #2f303a66),
+        url(../images/hero/hero768w@2x.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    .hero {
+      background-image: linear-gradient(#2f303a66, #2f303a66),
+        url(../images/hero/hero768w@3x.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .hero {
+    background-image: linear-gradient(#2f303a66, #2f303a66),
+      url(../images/hero/hero1600w.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(#2f303a66, #2f303a66),
+        url(../images/hero/hero1600w@2x.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    .hero {
+      background-image: linear-gradient(#2f303a66, #2f303a66),
+        url(../images/hero/hero1600w@3x.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: calc($desktop - 192px)) {
   .hero {
     padding: 200px;
     &__heading {

@@ -14,7 +14,7 @@
   margin: 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .logo {
     font-size: $fsLogo;
     line-height: 1.1923;

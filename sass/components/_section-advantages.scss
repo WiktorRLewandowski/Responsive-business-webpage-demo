@@ -12,7 +12,7 @@
   }
 
   &__icon {
-    background-color: $bgClr200;
+    background-color: $bgClr300;
     border-radius: 4px;
 
     display: flex;
@@ -34,7 +34,7 @@
     flex-basis: 100%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: $mobile) {
   .advantages {
     &__item {
       flex-basis: calc((100% - 30px) / 2);
@@ -44,7 +44,7 @@
     }
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .advantages {
     &__item {
       flex-basis: calc((100% - 3 * 30px) / 4);

@@ -43,12 +43,12 @@
     padding: 30px;
   }
 }
-@media (min-width: 786px) {
+@media (min-width: $tablet) {
   .staff {
     background-color: $bgClr300;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .staff__heading {
     @include sectionHeading($fsSectionHeading);
   }

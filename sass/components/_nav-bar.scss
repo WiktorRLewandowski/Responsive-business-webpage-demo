@@ -128,7 +128,7 @@
   }
 }
 
-@media (min-width: 934px) {
+@media (min-width: calc($netbook + 20px)) {
   .nav-bar {
     padding-block: 1.85em;
     .container {
@@ -149,7 +149,7 @@
     }
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .nav-bar {
     padding-block: 1.75em;
   }

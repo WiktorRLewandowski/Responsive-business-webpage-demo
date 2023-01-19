@@ -6,7 +6,7 @@
   display: none;
 }
 
-@media (min-width: 912px) {
+@media (min-width: $netbook) {
   // .section:has(.aoe) {
   //   display: block;
   // }

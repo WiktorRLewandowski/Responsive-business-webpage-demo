@@ -3,20 +3,21 @@
   color: $fontClr300;
 }
 
-::-webkit-scrollbar {
-  width: 0.75em;
-}
+@media (min-width: $desktop) {
+  ::-webkit-scrollbar {
+    width: 0.75em;
+  }
 
-::-webkit-scrollbar-track {
-  background-color: transparent;
-  margin-block: -0.5em;
-}
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    margin-block: -0.5em;
+  }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 100vh;
-  background-color: $accentClr300;
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100vh;
+    background-color: $accentClr300;
+  }
 }
-
 *:focus {
   outline: none;
 
@@ -48,6 +49,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .container {

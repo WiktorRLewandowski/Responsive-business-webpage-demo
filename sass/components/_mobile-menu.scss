@@ -25,8 +25,11 @@
     border: none;
     border-radius: 4px;
   }
-  .hamburger {
-    fill: $fontClr100;
+}
+.hamburger {
+  fill: $fontClr100;
+  &:active {
+    fill: $brandColor;
   }
 }
 
@@ -59,43 +62,58 @@
   font-weight: $fwSemiBold;
 }
 
-.mobile-menu__navigation {
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10vmin + 1vmax);
-  gap: calc(5vmax - 10px);
+.mobile-menu {
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10vmin + 1vmax);
+    gap: calc(5vmax - 10px);
+  }
+  &__contact-flex {
+    display: flex;
+    flex-direction: column;
+    gap: calc(5vmax - 10px);
+    margin-top: auto;
+  }
+  &__phone {
+    color: $brandColor;
+    font-size: calc(8vmin + 1vmax);
+  }
+  &__mail {
+    color: $fontClr200;
+    font-size: calc(5vmin + 1vmax);
+  }
+
+  &__socials-flex {
+    color: $brandColor;
+    display: flex;
+    gap: calc(4vw - 10px);
+
+    margin-top: calc(10vh - 20px);
+    font-size: calc(2vmin + 1vmax);
+  }
+
+  &__socials {
+    &::after {
+      content: "|";
+      color: $fontClr100;
+      opacity: 0.4;
+      margin-left: calc(4vw - 10px);
+    }
+    &:last-child::after {
+      content: "";
+      display: none;
+    }
+  }
+
+  &__logo--accent {
+    color: $fontClr500;
+  }
 }
 
-.mobile-menu__contact-flex {
-  display: flex;
-  flex-direction: column;
-  gap: calc(5vmax - 10px);
-  margin-top: auto;
-}
-.mobile-menu__phone {
-  color: $brandColor;
-  font-size: calc(8vmin + 1vmax);
-}
-.mobile-menu__mail {
-  color: $fontClr200;
-  font-size: calc(5vmin + 1vmax);
-}
-
-.mobile-menu__socials-flex {
-  color: $brandColor;
-  display: flex;
-  gap: calc(4vw - 10px);
-
-  margin-top: calc(10vh - 20px);
-  font-size: calc(3vmin + 1vmax);
-}
-
-.mobile-menu__logo--accent {
-  color: $fontClr500;
-}
 // landscape view of mobile menu on iPhone SE and Samsun S8+
 
-@media screen and (max-height: 375px) {
+@media screen and (max-height: 380px) {
   .mobile-menu__container {
     flex-flow: column wrap;
     justify-content: space-around;
@@ -108,7 +126,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .mobile-menu,
   .mobile-menu__container {
     display: none;

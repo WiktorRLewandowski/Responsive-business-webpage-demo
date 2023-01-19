@@ -62,7 +62,7 @@
     padding: 40px;
   }
   &::-webkit-scrollbar {
-    visibility: hidden;
+    width: 0;
   }
   &__heading {
     font-size: $fsModalHeading;
@@ -115,7 +115,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .modal__label--checkbox {
     font-size: $fsModalCheckbox-label;
   }

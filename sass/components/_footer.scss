@@ -31,7 +31,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: $tablet) and (max-width: $desktop) {
   .footer {
     padding: 60px;
     &__flex {
@@ -47,7 +47,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .footer {
     text-align: start;
     padding: 60px;
@@ -88,14 +88,14 @@
     @include itemHeading($fontClr300);
   }
 }
-@media (min-width: 480px) {
+@media (min-width: $mobile) {
   .join-us {
     margin-top: 5px;
     margin-right: 14px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .join-us {
     margin-top: 12px;
     margin-left: 70px;
