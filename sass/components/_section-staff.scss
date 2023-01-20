@@ -11,12 +11,10 @@
     gap: 30px;
     justify-content: center;
   }
-  // &__item {
-  //   display: flex;
-  //   justify-content: center;
-
-  //   flex-basis: 100%;
-  // }
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
 
   &__figure {
     background-color: $bgClr200;
@@ -46,10 +44,18 @@
 @media (min-width: $tablet) {
   .staff {
     background-color: $bgClr300;
+    &__item {
+      flex-basis: calc((100% - 2 * 15px - 30px) / 2);
+    }
   }
 }
 @media (min-width: $desktop) {
-  .staff__heading {
-    @include sectionHeading($fsSectionHeading);
+  .staff {
+    &__heading {
+      @include sectionHeading($fsSectionHeading);
+    }
+    &__item {
+      flex-basis: calc((100% - 2 * 15px - 2 * 30px) / 4);
+    }
   }
 }

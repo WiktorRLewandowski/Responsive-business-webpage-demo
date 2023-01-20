@@ -16,7 +16,9 @@
 
   padding: 10px 15px;
 
-  border-bottom: 1px solid $fontClr200;
+  // border-bottom: 1px solid $fontClr200;
+  box-shadow: 1px 0 5px 0 $fontClr200;
+
   &__hamburger {
     background: transparent;
     display: flex;
