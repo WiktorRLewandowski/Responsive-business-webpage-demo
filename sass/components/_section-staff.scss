@@ -1,5 +1,5 @@
 .staff {
-  background-color: $bgClr200;
+  background-color: $bgClr300;
   &__heading {
     @include sectionHeading($fsSectionHeadingMobile);
   }
@@ -43,7 +43,6 @@
 }
 @media (min-width: $tablet) {
   .staff {
-    background-color: $bgClr300;
     &__item {
       flex-basis: calc((100% - 2 * 15px - 30px) / 2);
     }

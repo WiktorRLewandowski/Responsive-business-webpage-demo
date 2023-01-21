@@ -5,7 +5,7 @@
   &__filter {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
     margin-bottom: 34px;
   }
   .portfolio__button {
@@ -34,6 +34,12 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .portfolio__filter {
+    justify-content: center;
+  }
+}
+
 .portfolio {
   &__caption {
     border-bottom: 1px solid $accentClr200;
@@ -45,8 +51,9 @@
   &__cards {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     justify-content: center;
+    flex-basis: 100%;
+
     gap: 30px;
   }
 
@@ -67,6 +74,24 @@
   &__img {
     position: relative;
     overflow: hidden;
+  }
+  &__img img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: $tablet) {
+  .portfolio__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 932px) {
+  .portfolio__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
