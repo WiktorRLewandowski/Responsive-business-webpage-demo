@@ -252,12 +252,21 @@
           <ul class="staff__list list">
             <li class="staff__item">
               <figure class="staff__figure">
-                <img src="./images/staff/johndoe1-450w.jpg" alt="Photo of John Doe the First" srcset="./images/staff/johndoe1-450w.jpg 450w, ./images/staff/johndoe1-354w
-                  354w, .images/staff/johndoe1-270w 270w" />
-                <!-- sizes="(max-width: 767px) calc(100vw -
-                  30px), (max-width: 1199px) calc(50vw - 60px), (min-width: 1200px) calc(25vw - 90px)" -->
+                <!-- <img src="./images/staff/johndoe1-450w.jpg" alt="Photo of John Doe the First" srcset="./images/staff/johndoe1-450w.jpg 450w, ./images/staff/johndoe1-354w
+                  354w, .images/staff/johndoe1-270w 270w" /> -->
 
-                <!-- width="270" height="260" -->
+                <picture>
+                  <source srcset="./images/staff/johndoe1-450w@2x.jpg 2x, ./images/staff/johndoe1-450w@3x.jpg 3x"
+                    media="(max-width: 767px)">
+                  <source
+                    srcset="./images/staff/johndoe1-354w.jpg, ./images/staff/johndoe1-354w@2x.jpg 2x, ./images/staff/johndoe1-354w@3x.jpg 3x"
+                    media="(min-width: 768px)">
+                  <source
+                    srcset="./images/staff/johndoe1-270w.jpg, ./images/staff/johndoe1-270w@2x.jpg 2x, ./images/staff/johndoe1-270w@3x.jpg 3x"
+                    media="(min-width: 1200px)">
+                  <img src="./images/staff/johndoe1-450w.jpg" alt="Photo of John Doe the First" />
+                </picture>
+
                 <figcaption class="staff__caption">
                   <h4 class="staff__name">John Doe</h4>
                   <p class="staff__position">Product Designer</p>
@@ -292,8 +301,20 @@
             </li>
             <li class="staff__item">
               <figure class="staff__figure">
-                <img src="./images/staff/janedoe-450w.jpg" alt="Photo of Jane Doe" srcset="./images/staff/janedoe-450w.jpg 450w, ./images/staff/janedoe-354w
-                                  354w, .images/staff/janedoe-270w 270w" />
+                <!-- <img src="./images/staff/janedoe-450w.jpg" alt="Photo of Jane Doe" srcset="./images/staff/janedoe-450w.jpg 450w, ./images/staff/janedoe-354w
+                                  354w, .images/staff/janedoe-270w 270w" /> -->
+                <picture>
+                  <source srcset="./images/staff/janedoe-450w@2x.jpg 2x, ./images/staff/janedoe-450w@3x.jpg 3x"
+                    media="(max-width: 767px)">
+                  <source
+                    srcset="./images/staff/janedoe-354w.jpg, ./images/staff/janedoe-354w@2x.jpg 2x, ./images/staff/janedoe-354w@3x.jpg 3x"
+                    media="(min-width: 768px)">
+                  <source
+                    srcset="./images/staff/janedoe-270w.jpg, ./images/staff/janedoe-270w@2x.jpg 2x, ./images/staff/janedoe-270w@3x.jpg 3x"
+                    media="(min-width: 1200px)">
+                  <img src="./images/staff/janedoe-450w.jpg" alt="Photo of Jane Doe" />
+                </picture>
+
                 <figcaption class="staff__caption">
                   <h4 class="staff__name">Jane Doe</h4>
                   <p class="staff__position">Frontend Developer</p>
@@ -327,8 +348,21 @@
             </li>
             <li class="staff__item">
               <figure class="staff__figure">
-                <img src="./images/staff/johndoe2-450w.jpg" alt="Photo of John Doe the Second" srcset="./images/staff/johndoe2-450w.jpg 450w, ./images/staff/johndoe2-354w
-                                  354w, .images/staff/johndoe2-270w 270w" />
+                <!-- <img src="./images/staff/johndoe2-450w.jpg" alt="Photo of John Doe the Second" srcset="./images/staff/johndoe2-450w.jpg 450w, ./images/staff/johndoe2-354w
+                                  354w, .images/staff/johndoe2-270w 270w" /> -->
+
+                <picture>
+                  <source srcset="./images/staff/johndoe2-450w@2x.jpg 2x, ./images/staff/johndoe2-450w@3x.jpg 3x"
+                    media="(max-width: 767px)">
+                  <source
+                    srcset="./images/staff/johndoe2-354w.jpg, ./images/staff/johndoe2-354w@2x.jpg 2x, ./images/staff/johndoe2-354w@3x.jpg 3x"
+                    media="(min-width: 768px)">
+                  <source
+                    srcset="./images/staff/johndoe2-270w.jpg, ./images/staff/johndoe2-270w@2x.jpg 2x, ./images/staff/johndoe2-270w@3x.jpg 3x"
+                    media="(min-width: 1200px)">
+                  <img src="./images/staff/johndoe2-450w.jpg" alt="Photo of John Doe the Second" />
+                </picture>
+
                 <figcaption class="staff__caption">
                   <h4 class="staff__name">John Doe</h4>
                   <p class="staff__position">Marketing</p>
@@ -362,8 +396,22 @@
             </li>
             <li class="staff__item">
               <figure class="staff__figure">
-                <img src="./images/staff/johndoe3-450w.jpg" alt="Photo of John Doe the Third" srcset="./images/staff/johndoe3-450w.jpg 450w, ./images/staff/johndoe3-354w
-                                  354w, .images/staff/johndoe3-270w 270w" />
+                <!-- <img src="./images/staff/johndoe3-450w.jpg" alt="Photo of John Doe the Third" srcset="./images/staff/johndoe3-450w.jpg 450w, ./images/staff/johndoe3-354w
+                                  354w, .images/staff/johndoe3-270w 270w" /> -->
+
+                <picture>
+                  <source srcset="./images/staff/johndoe3-450w@2x.jpg 2x, ./images/staff/johndoe3-450w@3x.jpg 3x"
+                    media="(max-width: 767px)" sizes="100%">
+                  <source
+                    srcset="./images/staff/johndoe3-354w.jpg, ./images/staff/johndoe3-354w@2x.jpg 2x, ./images/staff/johndoe3-354w@3x.jpg 3x"
+                    media="(min-width: 768px)">
+                  <source
+                    srcset="./images/staff/johndoe3-270w.jpg, ./images/staff/johndoe3-270w@2x.jpg 2x, ./images/staff/johndoe3-270w@3x.jpg 3x"
+                    media="(min-width: 1200px)">
+                  <img src="./images/staff/johndoe3-450w.jpg" alt="Photo of John Doe the Third" />
+                </picture>
+
+
                 <figcaption class="staff__caption">
                   <h4 class="staff__name">John Doe</h4>
                   <p class="staff__position">UI Designer</p>
