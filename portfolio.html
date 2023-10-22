@@ -94,14 +94,14 @@
       <div class="container">
         <div class="portfolio">
           <ul class="list portfolio__filter">
-            <li><button class="portfolio__button" type="button">Wszystkie</button></li>
-            <li><button class="portfolio__button" type="button">Strony</button></li>
-            <li><button class="portfolio__button" type="button">Aplikacje</button></li>
-            <li><button class="portfolio__button" type="button">Dizajn</button></li>
-            <li><button class="portfolio__button" type="button">Marketing</button></li>
+            <li><button class="portfolio__button active" data-filter="all" type="button">Wszystkie</button></li>
+            <li><button class="portfolio__button" data-filter="page" type="button">Strony</button></li>
+            <li><button class="portfolio__button" data-filter="app" type="button">Aplikacje</button></li>
+            <li><button class="portfolio__button" data-filter="design" type="button">Dizajn</button></li>
+            <li><button class="portfolio__button" data-filter="marketing" type="button">Marketing</button></li>
           </ul>
           <ul class="list portfolio__cards">
-            <li>
+            <li data-filter="page">
               <figure class="portfolio__projects" tabindex="0">
                 <div class="portfolio__img">
                   <picture>
@@ -123,7 +123,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-filter="design">
               <figure class="portfolio__projects" tabindex="0">
                 <div class="portfolio__img">
                   <picture>
@@ -145,7 +145,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-filter="app">
               <figure class="portfolio__projects" tabindex="0">
                 <div class="portfolio__img">
                   <picture>
@@ -168,7 +168,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-filter="marketing">
               <figure class="portfolio__projects" tabindex="0">
                 <div class="portfolio__img">
                   <picture>
@@ -190,7 +190,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-filter="app">
               <figure class="portfolio__projects" tabindex="0">
                 <div class="portfolio__img">
 
@@ -214,7 +214,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-filter="page">
               <figure class="portfolio__projects" tabindex="0">
                 <div class="portfolio__img">
                   <picture>
@@ -237,7 +237,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-filter="design">
               <figure class="portfolio__projects" tabindex="0">
                 <div class="portfolio__img">
 
@@ -261,7 +261,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-filter="marketing">
               <figure class="portfolio__projects" tabindex="0">
                 <div class="portfolio__img">
 
@@ -285,7 +285,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li data-filter="app">
               <figure class="portfolio__projects" tabindex="0">
                 <div class="portfolio__img">
 
@@ -384,10 +384,13 @@
 
     </div>
   </footer>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  <script 
+    defer 
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
   <script src="./js/mobile-menu.js"></script>
+  <script src="./js/filter.js"></script>
 
 </body>
 

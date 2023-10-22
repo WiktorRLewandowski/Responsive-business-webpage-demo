@@ -6,6 +6,7 @@
 @media (min-width: $desktop) {
   ::-webkit-scrollbar {
     width: 0.75em;
+    overflow: overlay;
   }
 
   ::-webkit-scrollbar-track {
